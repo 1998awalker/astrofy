@@ -2,91 +2,121 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
-
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
-  </div>
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Profile</div>
+    </div>
+  
+    <div class="mb-10 text-justify">
+      With nearly 10 years of experience in the entertainment and corporate technology industries, I specialize in supporting and delivering creative projects and technical solutions for live events, broadcast, and film productions. Currently, as a Technical Support Specialist at Disguise, I have contributed to high-profile projects like Eurovision, Morgan Wallen, and Taylor Swift. My work with leading clients such as CT, Solotech, and PRG, as well as broadcast clients like Bloomberg and Whitelight, demonstrates my ability to deliver cutting-edge solutions under pressure.
+    </div>
+  
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Education</div>
+    </div>
+  
+    <div class="time-line-container grid gap-4 mb-10">
+      <TimeLineElement
+        title="BA Music Technology"
+        subtitle="2016 to 2019 at University of West London, London, UK"
+      />
+      <TimeLineElement
+        title="Music Technology"
+        subtitle="2014 to 2016 at Leeds College of Music, Leeds, UK"
+      />
+      <TimeLineElement
+        title="High School"
+        subtitle="2009 to 2014 at Wetherby High School, Wetherby, UK"
+      />
+    </div>
+  
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Experience</div>
+    </div>
+  
+    <div class="time-line-container mb-10">
+      <TimeLineElement
+        title="Technical Support Specialist"
+        subtitle="From Jan 2022 to Present at Disguise, London, UK"
+      >
+        Supported high-profile events like Eurovision, Morgan Wallen, and Taylor Swift. Delivered corporate shows for clients like META, Procreate, and TAG Heuer. Designed and implemented venue systems, trained staff, and developed custom tools for technical processes.
+      </TimeLineElement>
+      <TimeLineElement
+        title="Video Systems Designer and Media Server Programmer"
+        subtitle="From Feb 2023 to Present at Pixel Artworks + Vibration Productions, London, UK"
+      >
+        Designed and programmed video systems for permanent installations. Delivered projection mapping solutions and utilized D3, Resolume, and other systems for immersive video projects.
+      </TimeLineElement>
+      <TimeLineElement
+        title="Video Engineer / Media Server Programmer"
+        subtitle="From Jan 2023 to Present at Outernet London, London, UK"
+      >
+        Engineered video solutions for live events and broadcast projects. Optimized workflows for large-scale conferences and collaborated with industry-leading companies to enhance system performance.
+      </TimeLineElement>
+      <TimeLineElement
+        title="AV Integrator / Audio Systems Integrator"
+        subtitle="From Dec 2019 to Present at MNKY HSE and Dear Darling Mayfair, London, UK"
+      >
+        Delivered audio and video systems for events and installations. Designed multi-floor network audio systems and supported high-stakes logistics and operational setups.
+      </TimeLineElement>
+    </div>
+  
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Certifications</div>
+    </div>
+  
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <li>
+        <a href="#" target="_blank">Disguise Programmer Certification</a>
+      </li>
+      <li>
+        <a href="#" target="_blank">Advanced Dante Certification</a>
+      </li>
+      <li>
+        <a href="#" target="_blank">Projection Mapping Expert Certification</a>
+      </li>
+    </ul>
+  
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Skills</div>
+    </div>
+  
+    <ul class="list-disc md:columns-5 columns-2 mx-6">
+      <li>MA3 Programming</li>
+      <li>D3 Programming</li>
+      <li>Avolites Installation</li>
+      <li>Projection Mapping</li>
+      <li>3D Workflows</li>
+      <li>Networking</li>
+      <li>Dante Networking</li>
+      <li>PowerShell Scripting</li>
+      <li>Python Automation</li>
+      <li>Audio Design</li>
+      <li>Video Engineering</li>
+      <li>System Integration</li>
+      <li>Camera Calibration</li>
+      <li>Signal Routing</li>
+      <li>Project Management</li>
+    </ul>
 
-  <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
+Here's the button code that links to a file located in the src/pages folder:
 
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-  </div>
+astro
+Copy
+Edit
+<div class="mt-10 text-center">
+  <a 
+    href="/src/content/Downloads/websiteCV.pdf" 
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
-  </div>
+    
+    download 
+    class="px-6 py-3 bg-blue-600 text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 transition"
+  >
+    Download Resume
+  </a>
+</div>
+  </BaseLayout>
+  
 
-  <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-  </div>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
-
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-  </ul>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-  </ul>
-</BaseLayout>
+  
